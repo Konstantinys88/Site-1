@@ -1,11 +1,63 @@
 .header {
+    background-image: url('../img/firstScreenBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 740px;
     &__menu {
+        padding-top: 20px;
+        margin-bottom: 112px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
+    }
+    &__logo {
+        width: 60px;
+        height: 60px;
     }
     &__burger {
         width: 50px;
         height: 50px;
+        background-color: $color-accent;
+        cursor: pointer;
+        padding: 0;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &_line {
+            width: 20px;
+            height: 3px;
+            background-color: $color-white;
+            margin-bottom: 4px;
+        }
+        &_line:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__title {
+        text-align: center;
+        color: $color-white;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 95px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        max-width: 734px;
+        margin: 0 auto 17px;
+
+    }
+    &__subtitle {
+        text-align: center;
+        color: $color-white;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 734px;
+        margin: 0 auto;
+        
     }
 }

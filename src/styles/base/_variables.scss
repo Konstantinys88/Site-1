@@ -5,3 +5,33 @@ $color-accent: #F7654A;
 $color-darc: #404149;
 $color-gray: #999999;
 $color-white: #FFFFFF;
+
+.text-h2 {
+    font-family: $font-oswald;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.text-h3 {
+    font-family: $font-oswald;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.text-h4 {
+    font-family: $font-oswald;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.text-p {
+    font-family: $font-openSans;
+    font-size: 16px;
+}
+
+.text-p-reviews {
+    font-family: $font-openSans;
+    font-size: 14px;
+    line-height: 21px;
+}
