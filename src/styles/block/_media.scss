@@ -1,0 +1,20 @@
+@media(max-width: 1280px) {
+    .numbers {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .numbers {
+        position: relative;
+        &__grid {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        
+        }
+    }
+}
