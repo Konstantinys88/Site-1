@@ -11,10 +11,17 @@ html {
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 @import 'base/variables';
 @import 'block/body';
 @import 'block/header';
 @import 'block/numbers';
+@import 'block/info';
+@import 'block/request';
 
 
 @import 'block/media';
