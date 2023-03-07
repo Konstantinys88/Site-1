@@ -1,0 +1,29 @@
+.services {
+    padding: 150px 0;
+    &__h2 {
+        text-align: center;
+        margin-bottom: 55px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
+    }
+    &__grid-item {
+        background: #F7F7F7;
+        padding: 59px 0;
+        width: 350px;
+    }
+    &__h4 {
+        text-align: center;
+        margin: 0 auto;
+        text-transform: uppercase;
+        max-width: 174px;
+        letter-spacing: 0.02em;
+    }
+    &__icon {
+        margin: 0 auto 21px;
+    }
+}
