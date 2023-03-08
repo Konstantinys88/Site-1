@@ -21,8 +21,13 @@
             text-align: center;
         }
     }
+    .partners {
+        &__flex {
+            justify-content: space-around;
+        }
+    }
     .services {
-        padding: 0 15px;
+        padding: 0 25px 25px;
         &__grid {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
