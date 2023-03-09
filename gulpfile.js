@@ -1,4 +1,4 @@
-
+// нуждается в настройке
 const gulp = require('gulp');
 const less = require('gulp-less');
 const sass = require('gulp-sass')(require('sass'));
@@ -23,12 +23,16 @@ const paths = {
         dest: 'dist'
     },
     styles: {
-        src: ['src/styles/**/*.less', 'src/styles/**/*.sass', 'src/styles/**/*.scss' ],
+        src: [
+        // 'src/styles/**/*.less', 'src/styles/**/*.sass', 'src/styles/**/*.scss',
+        'src/css/main.min.css',
+        // 'src/css/materialize.css'
+        ],
         dest: 'dist/css'
     },
     scripts: {
         src: 'src/scripts/**/*.js',
-        dest: 'dist/js'
+        dest: 'dist/scripts'
     },
     images: {
         src: 'src/img/*',
@@ -41,7 +45,7 @@ const paths = {
  */
 
 function clean() {
-    return del(['dist/*','!dist/img']);
+    return del(['dist/*','!dist/img',]);
 }
 
 /**
@@ -92,8 +96,8 @@ function scripts() {
         presets: ['@babel/env']
     }))
     .pipe(uglify())
-    .pipe(concat('main.min.js'))
-    .pipe(sourcemaps.write('.'))
+    // .pipe(concat('main.min.js'))
+    // .pipe(sourcemaps.write('.'))
     .pipe(size({
         showFiles: true
     }))
@@ -126,7 +130,7 @@ function watch() {
     gulp.watch(paths.images.src, img);
 }
 
-const build = gulp.series(clean, html, gulp.parallel(styles, scripts, img), watch);
+const build = gulp.series(clean,html, gulp.parallel(styles, scripts, img), watch);
 
 exports.clean = clean;
 exports.img = img;
