@@ -321,6 +321,7 @@ body .container {
   text-transform: uppercase;
   color: #F7654A;
   margin-bottom: 23px;
+  cursor: pointer;
 }
 .question_p {
   margin-bottom: 40px;
@@ -334,31 +335,6 @@ body .container {
 .question .services__h2 {
   padding-top: 150px;
   margin-bottom: 50px;
-}
-
-.question_h3.open::before,
-.question_h3.close::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url(../img/Polygon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 14px;
-}
-
-.question_h3.open::before {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
-.question_h3.close + .question_p {
-  display: none;
-}
-
-.question_h3.close {
-  margin-bottom: 31px;
 }
 
 .partners {
@@ -452,6 +428,13 @@ body .container {
 }
 .contacts__item-title_mail {
   padding-top: 30px;
+}
+.contacts__item-text {
+  text-transform: uppercase;
+}
+.contacts__item-text a {
+  text-decoration: none;
+  color: inherit;
 }
 .contacts__item-text_color {
   color: #F7654A;

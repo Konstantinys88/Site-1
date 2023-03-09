@@ -25,6 +25,11 @@
         }
     }
     &__item-text {
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
         &_color {
             color: $color-accent;
         }

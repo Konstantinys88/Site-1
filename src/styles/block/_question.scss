@@ -3,6 +3,7 @@
         text-transform: uppercase;
         color: $color-accent;
         margin-bottom: 23px;
+        cursor: pointer;
     }
     &_p {
         margin-bottom: 40px;
@@ -19,26 +20,3 @@
     margin-bottom: 50px;
 }
 
-.question_h3.open::before,
-.question_h3.close::before {
-    content: '';
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-image: url(../img/Polygon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 14px;
-}
-
-.question_h3.open::before {
-    transform: rotate(-90deg);
-}
-
-.question_h3.close + .question_p {
-    display: none;
-}
-
-.question_h3.close {
-    margin-bottom: 31px;
-}
