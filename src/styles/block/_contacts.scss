@@ -1,0 +1,32 @@
+.contacts {
+    padding: 100px 0 150px;
+    &__h2 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__item {
+        max-width: 255px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__img {
+        display: inline-block;
+    }
+    &__item-title {
+        text-transform: uppercase;
+        color: #999999;
+        padding: 18px 0 16px;
+        &_mail {
+            padding-top: 30px;
+        }
+    }
+    &__item-text {
+        &_color {
+            color: $color-accent;
+        }
+    }
+}
