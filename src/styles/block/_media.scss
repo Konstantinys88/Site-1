@@ -79,12 +79,13 @@
         }
     }
     .numbers {
-        position: relative;
-        width: 100%;
-        &__grid {
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-        }
+        display: none;
+        // position: relative;
+        // width: 100%;
+        // &__grid {
+        //     grid-template-columns: repeat(1, 1fr);
+        //     grid-template-rows: repeat(4, 1fr);
+        // }
     }
     .info {
         padding: 30px 0;
