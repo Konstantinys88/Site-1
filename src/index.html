@@ -12,7 +12,7 @@
         rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" /> -->
 
     <link rel="stylesheet" href="css/main.min.css">
 
@@ -23,35 +23,23 @@
 <body>
 
     <ul id="slide-out" class="sidenav">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="images/office.jpg">
-                </div>
-                <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-            </div>
-        </li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
+        <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
+        <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть</a></li>
     </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
     <header class="header">
         <div class="container">
             <div class="header__menu">
                 <img src="img/logo.svg" alt="Logo" class="header__logo" />
-                <button class="header__burger">
+                <a class="header__burger sidenav-trigger" data-target="slide-out">
                     <span class="header__burger_line"></span>
                     <span class="header__burger_line"></span>
                     <span class="header__burger_line"></span>
-                </button>
+                </a>
             </div>
             <h1 class="header__title">Реализуем крупнейшие проекты в России</h1>
             <h4 class="header__subtitle">стадионы, газопроводы, мосты, дамбы</h4>

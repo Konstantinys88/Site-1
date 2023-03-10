@@ -1,4 +1,6 @@
-// нуждается в настройке
+// нуждается в настройке 
+// 1. необходимо отключить минимизацию js
+
 const gulp = require('gulp');
 const less = require('gulp-less');
 const sass = require('gulp-sass')(require('sass'));
@@ -95,7 +97,7 @@ function scripts() {
     .pipe(babel({
         presets: ['@babel/env']
     }))
-    .pipe(uglify())
+    // .pipe(uglify())
     // .pipe(concat('main.min.js'))
     // .pipe(sourcemaps.write('.'))
     .pipe(size({
