@@ -12,6 +12,7 @@
         rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- необходимый код перенесенн из materializ.css в _bodu.scss -->
     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" /> -->
 
     <link rel="stylesheet" href="css/main.min.css">
@@ -23,11 +24,13 @@
 <body>
 
     <ul id="slide-out" class="sidenav">
-        <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
-        <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
-        <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
-        <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
-        <li><div class="divider"></div></li>
+        <li><a href="#"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="#info"><i class="material-icons">people</i>О нас</a></li>
+        <li><a href="#services"><i class="material-icons">grade</i>Услуги</a></li>
+        <li><a href="#contacts"><i class="material-icons">phone</i>Контакты</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
         <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть</a></li>
     </ul>
 
@@ -72,7 +75,7 @@
             </div>
     </section>
 
-    <section class="info">
+    <section class="info" id="info">
         <div class="container">
             <h2 class="text-h2 info__header">Наши самые большие проекты</h2>
             <div class="info__flex">
@@ -101,6 +104,15 @@
         </div>
     </section>
 
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Заголовок окна</h4>
+            <p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Жаренные лучше бросил своего, мир ручеек великий использовало буквоград что, возвращайся рукопись правилами живет эта там переулка, за даль заглавных.</p>
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+
     <section class="request">
         <div class="container">
             <div class="request__flex">
@@ -108,15 +120,15 @@
                     <h2 class="upper-text request__upper-text">Самые умные проекты</h2>
                     <h3 class="lower-text request__lower-text">реализуем самые смелые решения в России!</h3>
                 </div>
-                <button class="button request__button">
+                <a class="button request__button modal-trigger" href="#modal1">
                     <img class="request__button-img" src="img/mail.svg" alt="mail">
                     <p class="request__button-text">ваш запрос</p>
-                </button>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h2 class="text-h2 services__h2">чем мы занимаемся?</h2>
             <div class="services__grid">
@@ -281,15 +293,15 @@
                     <h2 class="upper-text request__upper-text">хотите с нами работать?</h2>
                     <h3 class="lower-text request__lower-text">оставьте заявку и мы свяжемся с вами!</h3>
                 </div>
-                <button class="button request__button">
+                <a class="button request__button modal-trigger" href="#modal1">
                     <img class="request__button-img" src="img/mail.svg" alt="mail">
                     <p class="request__button-text">ваш запрос</p>
-                </button>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <h2 class="text-h2 contacts__h2">Контакты</h2>
             <div class="contacts__grid">
